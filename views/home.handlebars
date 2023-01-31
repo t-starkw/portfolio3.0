@@ -1,35 +1,55 @@
 <div id="fullPage">
-    <div class="section sec1" id="home">
-        <h1>Section 1</h1>
+    <div class="section sec1" data-anchor="home">
+        <h1>Welcome</h1>
+    </div>
+    <div class="section sec2" data-anchor="aboutme">
         <div class="slide">
-            <h1>First SLide</h1>
+
+           {{> about}}
         </div>
         <div class="slide">
-            <h1>second SLide</h1>
+            <h1>About Me</h1>
         </div>
         <div class="slide">
-            <h1>third SLide</h1>
+            <h1>About Me</h1>
         </div>
     </div>
-    <div class="section sec2" id="aboutme">
-        <h1>Section 2</h1>
+    <div class="section sec3 " data-anchor="work">
+        <div class="projects-title">
+            {{!-- <h1>My Projects</h1> --}}
+        </div>
+        <div class="slide slide1">
+            <div class="card-group group1">
+
+            </div>
+        </div>
+        <div class="slide slide2">
+            <div class="card-group group2">
+
+            </div>
+        </div>
+        <div class="slide slide3">
+            <div class="card-group group3">
+
+            </div>
+        </div>
     </div>
-    <div class="section sec3" id="work">
-        <h1>Section 3</h1>
-    </div>
-    <div class="section sec4" id="contact">
-        <h1>Section 4</h1>
+    <div class="section sec4" data-anchor="contact">
+        <h1>Contact Me</h1>
     </div>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.15/fullpage.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
     new fullpage('#fullPage', {
         //options here
         licenseKey: 'gplv3-license',
         autoScrolling: true,
         navigation: true,
-
+        anchors: ['section1', 'section2', 'section3', 'section4'],
         navigationTooltips: ['Home', 'About Me', 'Work', 'Contact'],
         showActiveTooltip: true,
         scrollingSpeed: 1000,
@@ -37,3 +57,4 @@
         slidesNavigation: true,
     });
 </script>
+<script src="./js/index.js"></script>
