@@ -1,15 +1,39 @@
-    <div id="fullPage">
-        <div class="section">Section 1</div>
-        <div class="section">Section 2</div>
-        <div class="section">Section 3</div>
-        <div class="section">Section 4</div>
+<div id="fullPage">
+    <div class="section sec1" id="home">
+        <h1>Section 1</h1>
+        <div class="slide">
+            <h1>First SLide</h1>
+        </div>
+        <div class="slide">
+            <h1>second SLide</h1>
+        </div>
+        <div class="slide">
+            <h1>third SLide</h1>
+        </div>
     </div>
+    <div class="section sec2" id="aboutme">
+        <h1>Section 2</h1>
+    </div>
+    <div class="section sec3" id="work">
+        <h1>Section 3</h1>
+    </div>
+    <div class="section sec4" id="contact">
+        <h1>Section 4</h1>
+    </div>
+</div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.15/fullpage.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.15/fullpage.min.js"></script>
 <script>
     new fullpage('#fullPage', {
-	//options here
-	autoScrolling:true,
-	scrollHorizontally: true
-});
+        //options here
+        licenseKey: 'gplv3-license',
+        autoScrolling: true,
+        navigation: true,
+
+        navigationTooltips: ['Home', 'About Me', 'Work', 'Contact'],
+        showActiveTooltip: true,
+        scrollingSpeed: 1000,
+        controlArrows: false,
+        slidesNavigation: true,
+    });
 </script>
